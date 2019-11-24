@@ -1,0 +1,3592 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>vnas2-workspace documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">vnas2-workspace documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DashBoardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+    </p>
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-dash-board</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./dash-board.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./dash-board.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#categoriesOrg">categoriesOrg</a>
+                            </li>
+                            <li>
+                                <a href="#categoriesOrg$">categoriesOrg$</a>
+                            </li>
+                            <li>
+                                <a href="#dailyNews">dailyNews</a>
+                            </li>
+                            <li>
+                                <a href="#dailyNews$">dailyNews$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#destroyed$">destroyed$</a>
+                            </li>
+                            <li>
+                                <a href="#filterCategoriesOrg">filterCategoriesOrg</a>
+                            </li>
+                            <li>
+                                <a href="#filterListObjects">filterListObjects</a>
+                            </li>
+                            <li>
+                                <a href="#filterNewsBasket">filterNewsBasket</a>
+                            </li>
+                            <li>
+                                <a href="#filterNewsDaily">filterNewsDaily</a>
+                            </li>
+                            <li>
+                                <a href="#filterSearch">filterSearch</a>
+                            </li>
+                            <li>
+                                <a href="#filterSearchConditions">filterSearchConditions</a>
+                            </li>
+                            <li>
+                                <a href="#filterWebsite">filterWebsite</a>
+                            </li>
+                            <li>
+                                <a href="#isMobile$">isMobile$</a>
+                            </li>
+                            <li>
+                                <a href="#isNewsLoading">isNewsLoading</a>
+                            </li>
+                            <li>
+                                <a href="#languages">languages</a>
+                            </li>
+                            <li>
+                                <a href="#listObjects">listObjects</a>
+                            </li>
+                            <li>
+                                <a href="#listObjects$">listObjects$</a>
+                            </li>
+                            <li>
+                                <a href="#news">news</a>
+                            </li>
+                            <li>
+                                <a href="#news$">news$</a>
+                            </li>
+                            <li>
+                                <a href="#newsBasket">newsBasket</a>
+                            </li>
+                            <li>
+                                <a href="#newsBasket$">newsBasket$</a>
+                            </li>
+                            <li>
+                                <a href="#treeCategoryCmp">treeCategoryCmp</a>
+                            </li>
+                            <li>
+                                <a href="#trees$">trees$</a>
+                            </li>
+                            <li>
+                                <a href="#website$">website$</a>
+                            </li>
+                            <li>
+                                <a href="#wesites">wesites</a>
+                            </li>
+                            <li>
+                                <a href="#pageNumber">pageNumber</a>
+                            </li>
+                            <li>
+                                <a href="#pageSize">pageSize</a>
+                            </li>
+                            <li>
+                                <a href="#titlePage">titlePage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#titleService">titleService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#catchError">catchError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadCategoriesOrg">loadCategoriesOrg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadDailyNews">loadDailyNews</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadListObjects">loadListObjects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadNews">loadNews</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadNewsBasket">loadNewsBasket</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadNewsWebsite">loadNewsWebsite</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#loadTreeCategory">loadTreeCategory</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onPagingCategoriesOrg">onPagingCategoriesOrg</a>
+                            </li>
+                            <li>
+                                <a href="#onPagingDailyNews">onPagingDailyNews</a>
+                            </li>
+                            <li>
+                                <a href="#onPagingListObjects">onPagingListObjects</a>
+                            </li>
+                            <li>
+                                <a href="#onPagingNewsBasket">onPagingNewsBasket</a>
+                            </li>
+                            <li>
+                                <a href="#onPagingWebsite">onPagingWebsite</a>
+                            </li>
+                            <li>
+                                <a href="#onSearch">onSearch</a>
+                            </li>
+                            <li>
+                                <a href="#onSearchWebsite">onSearchWebsite</a>
+                            </li>
+                            <li>
+                                <a href="#onSelectedNode">onSelectedNode</a>
+                            </li>
+                            <li>
+                                <a href="#sortOrderByNewDaily">sortOrderByNewDaily</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#addClassPage">addClassPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#getTitle">getTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#removeClassPage">removeClassPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#setTitle">setTitle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, newsDomainApiService: <a href="../injectables/NewsDomainApiService.html">NewsDomainApiService</a>, newsBasketService: <a href="../injectables/NewsBasketService.html">NewsBasketService</a>, newsService: <a href="../injectables/NewsService.html">NewsService</a>, monitorObjectsService: <a href="../injectables/MonitorObjectsService.html">MonitorObjectsService</a>, breakpointObserver: BreakpointObserver)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:152</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>injector</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>newsDomainApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewsDomainApiService.html" target="_self" >NewsDomainApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>newsBasketService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewsBasketService.html" target="_self" >NewsBasketService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>newsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NewsService.html" target="_self" >NewsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>monitorObjectsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MonitorObjectsService.html" target="_self" >MonitorObjectsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>breakpointObserver</td>
+                                                  
+                                                        <td>
+                                                                    <code>BreakpointObserver</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="catchError"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            catchError
+                        </b>
+                        <a href="#catchError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>catchError(err)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="404"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:404</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>err</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadCategoriesOrg"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadCategoriesOrg
+                        </b>
+                        <a href="#loadCategoriesOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadCategoriesOrg(filter?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="339"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:339</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadDailyNews"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadDailyNews
+                        </b>
+                        <a href="#loadDailyNews"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadDailyNews(filter?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="361"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:361</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadListObjects"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadListObjects
+                        </b>
+                        <a href="#loadListObjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadListObjects(filter?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="393"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:393</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadNews"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadNews
+                        </b>
+                        <a href="#loadNews"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadNews(filter?: literal type, data?: literal type[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="374"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:374</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>literal type[]</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadNewsBasket"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadNewsBasket
+                        </b>
+                        <a href="#loadNewsBasket"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadNewsBasket(filter?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadNewsWebsite"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadNewsWebsite
+                        </b>
+                        <a href="#loadNewsWebsite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadNewsWebsite(filter?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="408"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:408</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadTreeCategory"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            loadTreeCategory
+                        </b>
+                        <a href="#loadTreeCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadTreeCategory()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="333"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:333</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPagingCategoriesOrg"></a>
+                    <span class="name">
+                        <b>
+                            onPagingCategoriesOrg
+                        </b>
+                        <a href="#onPagingCategoriesOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPagingCategoriesOrg(page)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="306"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:306</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPagingDailyNews"></a>
+                    <span class="name">
+                        <b>
+                            onPagingDailyNews
+                        </b>
+                        <a href="#onPagingDailyNews"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPagingDailyNews(page)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="301"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:301</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPagingListObjects"></a>
+                    <span class="name">
+                        <b>
+                            onPagingListObjects
+                        </b>
+                        <a href="#onPagingListObjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPagingListObjects(page)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="311"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:311</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPagingNewsBasket"></a>
+                    <span class="name">
+                        <b>
+                            onPagingNewsBasket
+                        </b>
+                        <a href="#onPagingNewsBasket"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPagingNewsBasket(page)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="316"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:316</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPagingWebsite"></a>
+                    <span class="name">
+                        <b>
+                            onPagingWebsite
+                        </b>
+                        <a href="#onPagingWebsite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onPagingWebsite(page)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="296"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:296</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSearch"></a>
+                    <span class="name">
+                        <b>
+                            onSearch
+                        </b>
+                        <a href="#onSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSearch(data: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSearchWebsite"></a>
+                    <span class="name">
+                        <b>
+                            onSearchWebsite
+                        </b>
+                        <a href="#onSearchWebsite"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSearchWebsite(query)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="321"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:321</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelectedNode"></a>
+                    <span class="name">
+                        <b>
+                            onSelectedNode
+                        </b>
+                        <a href="#onSelectedNode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSelectedNode(node: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:214</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>node</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortOrderByNewDaily"></a>
+                    <span class="name">
+                        <b>
+                            sortOrderByNewDaily
+                        </b>
+                        <a href="#sortOrderByNewDaily"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortOrderByNewDaily(orderBy: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="266"
+                            class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:266</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orderBy</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addClassPage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            addClassPage
+                        </b>
+                        <a href="#addClassPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addClassPage(className: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:22</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>className</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTitle"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            getTitle
+                        </b>
+                        <a href="#getTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTitle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:18</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeClassPage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            removeClassPage
+                        </b>
+                        <a href="#removeClassPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeClassPage(className?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:28</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>className</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTitle"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            setTitle
+                        </b>
+                        <a href="#setTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setTitle(newTitle?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:14</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newTitle</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categoriesOrg"></a>
+                        <span class="name">
+                            <b>
+                            categoriesOrg</b>
+                            <a href="#categoriesOrg"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:127</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="categoriesOrg$"></a>
+                        <span class="name">
+                            <b>
+                            categoriesOrg$</b>
+                            <a href="#categoriesOrg$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:126</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dailyNews"></a>
+                        <span class="name">
+                            <b>
+                            dailyNews</b>
+                            <a href="#dailyNews"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:133</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dailyNews$"></a>
+                        <span class="name">
+                            <b>
+                            dailyNews$</b>
+                            <a href="#dailyNews$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="132" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:132</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="destroyed$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            destroyed$</b>
+                            <a href="#destroyed$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterCategoriesOrg"></a>
+                        <span class="name">
+                            <b>
+                            filterCategoriesOrg</b>
+                            <a href="#filterCategoriesOrg"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null,
+    object_type: null,
+    object_name: null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:102</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterListObjects"></a>
+                        <span class="name">
+                            <b>
+                            filterListObjects</b>
+                            <a href="#filterListObjects"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null,
+    object_type: null,
+    object_name: null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterNewsBasket"></a>
+                        <span class="name">
+                            <b>
+                            filterNewsBasket</b>
+                            <a href="#filterNewsBasket"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:114</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterNewsDaily"></a>
+                        <span class="name">
+                            <b>
+                            filterNewsDaily</b>
+                            <a href="#filterNewsDaily"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null,
+    title_order: null, // or
+    date_created_order: null, // or
+    rating_point_order: null // or
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterSearch"></a>
+                        <span class="name">
+                            <b>
+                            filterSearch</b>
+                            <a href="#filterSearch"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null,
+    from_date: null,
+    to_date: null,
+    table_names: null,
+    order_by: null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterSearchConditions"></a>
+                        <span class="name">
+                            <b>
+                            filterSearchConditions</b>
+                            <a href="#filterSearchConditions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filterWebsite"></a>
+                        <span class="name">
+                            <b>
+                            filterWebsite</b>
+                            <a href="#filterWebsite"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    page_number: null,
+    page_size: null,
+    website_url: null
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:92</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isMobile$"></a>
+                        <span class="name">
+                            <b>
+                            isMobile$</b>
+                            <a href="#isMobile$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.breakpointObserver
+    .observe([Breakpoints.XSmall, Breakpoints.Small])
+    .pipe(
+      map(result &#x3D;&gt; result.matches),
+      shareReplay()
+    )</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:144</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isNewsLoading"></a>
+                        <span class="name">
+                            <b>
+                            isNewsLoading</b>
+                            <a href="#isNewsLoading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="languages"></a>
+                        <span class="name">
+                            <b>
+                            languages</b>
+                            <a href="#languages"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>AppConfig.Languages</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:122</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listObjects"></a>
+                        <span class="name">
+                            <b>
+                            listObjects</b>
+                            <a href="#listObjects"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:136</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listObjects$"></a>
+                        <span class="name">
+                            <b>
+                            listObjects$</b>
+                            <a href="#listObjects$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:135</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="news"></a>
+                        <span class="name">
+                            <b>
+                            news</b>
+                            <a href="#news"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:139</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="news$"></a>
+                        <span class="name">
+                            <b>
+                            news$</b>
+                            <a href="#news$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:138</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newsBasket"></a>
+                        <span class="name">
+                            <b>
+                            newsBasket</b>
+                            <a href="#newsBasket"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:130</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newsBasket$"></a>
+                        <span class="name">
+                            <b>
+                            newsBasket$</b>
+                            <a href="#newsBasket$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:129</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="treeCategoryCmp"></a>
+                        <span class="name">
+                            <b>
+                            treeCategoryCmp</b>
+                            <a href="#treeCategoryCmp"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../components/TreeCategoryVerticalComponent.html" target="_self" >TreeCategoryVerticalComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;treeCategory&#x27;, {static: true})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:152</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="trees$"></a>
+                        <span class="name">
+                            <b>
+                            trees$</b>
+                            <a href="#trees$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:124</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="website$"></a>
+                        <span class="name">
+                            <b>
+                            website$</b>
+                            <a href="#website$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:141</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="wesites"></a>
+                        <span class="name">
+                            <b>
+                            wesites</b>
+                            <a href="#wesites"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">projects/vnas2-app/src/app/dashboard/pages/dash-board/dash-board.component.ts:142</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageNumber"></a>
+                        <span class="name">
+                            <b>
+                            pageNumber</b>
+                            <a href="#pageNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;1&#x27;</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:6</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageSize"></a>
+                        <span class="name">
+                            <b>
+                            pageSize</b>
+                            <a href="#pageSize"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;20&#x27;</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:7</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="titlePage"></a>
+                        <span class="name">
+                            <b>
+                            titlePage</b>
+                            <a href="#titlePage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:5</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="titleService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            titleService</b>
+                            <a href="#titleService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/platform-browser/Title" target="_blank" >Title</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:8</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
+import {
+  AfterViewInit,
+  Component,
+  Injector,
+  OnDestroy,
+  OnInit,
+  ViewChild
+} from &#x27;@angular/core&#x27;;
+import {
+  MonitorObjectsService,
+  NewsBasketService,
+  NewsDomainApiService,
+  NewsService
+} from &#x27;@vnas2-workspace/vnas2-api&#x27;;
+import {
+  AppConfig,
+  BaseComponent,
+  isEmpty,
+  Logger
+} from &#x27;@vnas2-workspace/vnas2-core&#x27;;
+import {
+  fadeInAnimation,
+  TreeCategoryVerticalComponent
+} from &#x27;@vnas2-workspace/vnas2-ui-commons&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { Observable, of, Subject } from &#x27;rxjs&#x27;;
+import {
+  catchError,
+  finalize,
+  map,
+  shareReplay,
+  takeUntil
+} from &#x27;rxjs/operators&#x27;;
+const logger &#x3D; new Logger(&#x27;DashBoardComponent&#x27;);
+@Component({
+  selector: &#x27;app-dash-board&#x27;,
+  templateUrl: &#x27;./dash-board.component.html&#x27;,
+  styleUrls: [&#x27;./dash-board.component.scss&#x27;],
+  animations: [fadeInAnimation]
+})
+export class DashBoardComponent extends BaseComponent
+  implements OnInit, OnDestroy, AfterViewInit {
+  private destroyed$ &#x3D; new Subject();
+
+  isNewsLoading &#x3D; false;
+
+  filterSearch: {
+    page_number?: string;
+    page_size?: string;
+    from_date?: string;
+    to_date?: string;
+    table_names: string;
+    order_by?: string; // field desc/asc
+  } &#x3D; {
+    page_number: null,
+    page_size: null,
+    from_date: null,
+    to_date: null,
+    table_names: null,
+    order_by: null
+  };
+
+  filterSearchConditions: { field_name: string; field_value: string }[];
+
+  filterNewsDaily: {
+    page_number?: string;
+    page_size?: string;
+    title_order?: string; // or
+    date_created_order?: string; // or
+    rating_point_order?: string; // or
+  } &#x3D; {
+    page_number: null,
+    page_size: null,
+    title_order: null, // or
+    date_created_order: null, // or
+    rating_point_order: null // or
+  };
+
+  filterListObjects: {
+    page_number?: string;
+    page_size?: string;
+    object_type: string;
+    object_name: string;
+  } &#x3D; {
+    page_number: null,
+    page_size: null,
+    object_type: null,
+    object_name: null
+  };
+
+  filterWebsite: {
+    page_number?: string;
+    page_size?: string;
+    website_url?: string;
+  } &#x3D; {
+    page_number: null,
+    page_size: null,
+    website_url: null
+  };
+
+  filterCategoriesOrg: {
+    page_number?: string;
+    page_size?: string;
+    object_type: string;
+    object_name: string;
+  } &#x3D; {
+    page_number: null,
+    page_size: null,
+    object_type: null,
+    object_name: null
+  };
+
+  filterNewsBasket: {
+    page_number?: string;
+    page_size?: string;
+  } &#x3D; {
+    page_number: null,
+    page_size: null
+  };
+
+  languages &#x3D; AppConfig.Languages;
+
+  trees$: Observable&lt;any&gt;;
+
+  categoriesOrg$: Observable&lt;any&gt;;
+  categoriesOrg: any &#x3D; null;
+
+  newsBasket$: Observable&lt;any&gt;;
+  newsBasket: any &#x3D; null;
+
+  dailyNews$: Observable&lt;any&gt;;
+  dailyNews: any &#x3D; null;
+
+  listObjects$: Observable&lt;any&gt;;
+  listObjects: any;
+
+  news$: Observable&lt;any&gt;;
+  news: any &#x3D; null;
+
+  website$: Observable&lt;any&gt;;
+  wesites: any &#x3D; null;
+
+  isMobile$: Observable&lt;boolean&gt; &#x3D; this.breakpointObserver
+    .observe([Breakpoints.XSmall, Breakpoints.Small])
+    .pipe(
+      map(result &#x3D;&gt; result.matches),
+      shareReplay()
+    );
+
+  @ViewChild(&#x27;treeCategory&#x27;, { static: true })
+  treeCategoryCmp: TreeCategoryVerticalComponent;
+
+  constructor(
+    injector: Injector,
+    private newsDomainApiService: NewsDomainApiService,
+    private newsBasketService: NewsBasketService,
+    private newsService: NewsService,
+    private monitorObjectsService: MonitorObjectsService,
+    private breakpointObserver: BreakpointObserver
+  ) {
+    super(injector);
+    this.titlePage &#x3D; &#x27;Bản tin&#x27;;
+    this.filterSearchConditions &#x3D; [];
+    this.filterSearch.page_number &#x3D; this.pageNumber;
+    this.filterSearch.page_size &#x3D; this.pageSize;
+    // API GET TOP NEWS_OF_DOMAIN
+    this.filterSearch.table_names &#x3D;
+      &#x27;news_of_domain_10|news_of_domain_11|news_of_domain_12|news_of_domain_15&#x27;;
+
+    this.filterNewsDaily.page_number &#x3D; this.pageNumber;
+    this.filterNewsDaily.page_size &#x3D; this.pageSize;
+
+    this.filterWebsite.page_number &#x3D; this.pageNumber;
+    this.filterWebsite.page_size &#x3D; this.pageSize;
+
+    this.filterListObjects.page_number &#x3D; this.pageNumber;
+    this.filterListObjects.page_size &#x3D; this.pageSize;
+    this.filterListObjects.object_type &#x3D; AppConfig.ObjectTypes.PERSON;
+
+    this.filterCategoriesOrg.page_number &#x3D; this.pageNumber;
+    this.filterCategoriesOrg.page_size &#x3D; this.pageSize;
+    this.filterCategoriesOrg.object_type &#x3D; AppConfig.ObjectTypes.COUNTRY;
+
+    this.filterNewsBasket.page_number &#x3D; this.pageNumber;
+    this.filterNewsBasket.page_size &#x3D; this.pageSize;
+  }
+
+  // #region life cycle hook methods order
+  ngOnInit() {
+    this.setTitle();
+    this.loadTreeCategory();
+    this.loadCategoriesOrg(this.filterCategoriesOrg);
+    this.loadNewsBasket(this.filterNewsBasket);
+    this.loadDailyNews(this.filterNewsDaily);
+    this.loadListObjects(this.filterListObjects);
+    this.loadNewsWebsite(this.filterWebsite);
+    this.loadNews(this.filterSearch, this.filterSearchConditions);
+  }
+
+  ngOnDestroy() {
+    this.destroyed$.next();
+    this.destroyed$.complete();
+    this.removeClassPage(&#x27;DashBoardComponent&#x27;);
+  }
+
+  ngAfterViewInit() {
+    this.addClassPage(&#x27;DashBoardComponent&#x27;);
+  }
+  //#endregion
+
+  //#region public methods
+
+  onSelectedNode(node: any) {
+    const data &#x3D; node.data;
+    let domainTablesName: any[] &#x3D; [];
+    domainTablesName &#x3D; data.map((item: any) &#x3D;&gt; item.domain_table_name);
+    this.filterSearch.table_names &#x3D; domainTablesName.join(&#x27;|&#x27;);
+    this.isNewsLoading &#x3D; false;
+    this.loadNews(this.filterSearch, this.filterSearchConditions);
+  }
+
+  onSearch(data: {
+    fromDateSearch: any;
+    toDateSearch: any;
+    language: any;
+    website_cate_id: any;
+    rating_point: any;
+  }) {
+    if (!isEmpty(data.fromDateSearch)) {
+      this.filterSearch.from_date &#x3D; moment(data.fromDateSearch).format(
+        &#x27;YYYY-MM-DD&#x27;
+      );
+    }
+    if (!isEmpty(data.toDateSearch)) {
+      this.filterSearch.to_date &#x3D; moment(data.toDateSearch).format(
+        &#x27;YYYY-MM-DD&#x27;
+      );
+    }
+
+    this.filterSearchConditions &#x3D; [];
+
+    if (!isEmpty(data.rating_point)) {
+      this.filterSearchConditions.push({
+        field_name: &#x27;rating_point&#x27;,
+        field_value: data.rating_point.toString()
+      });
+    }
+    if (!isEmpty(data.website_cate_id)) {
+      this.filterSearchConditions.push({
+        field_name: &#x27;website_cate_id&#x27;,
+        field_value: data.website_cate_id.join(&#x27;|&#x27;)
+      });
+    }
+    if (data.language.length &gt; 0) {
+      this.filterSearchConditions.push({
+        field_name: &#x27;language&#x27;,
+        field_value: data.language.join(&#x27;|&#x27;)
+      });
+    }
+
+    this.isNewsLoading &#x3D; false;
+    this.loadNews(this.filterSearch, this.filterSearchConditions);
+  }
+
+  sortOrderByNewDaily(orderBy: { [key: number]: boolean }) {
+    logger.debug(orderBy[0], orderBy[1], orderBy[2]);
+    // title
+    if (orderBy[0] !&#x3D;&#x3D; undefined) {
+      this.filterNewsDaily.title_order &#x3D; orderBy[0]
+        ? AppConfig.SortType.ASC
+        : AppConfig.SortType.DESC;
+    } else {
+      this.filterNewsDaily.title_order &#x3D; null;
+    }
+    // date
+    if (orderBy[1] !&#x3D;&#x3D; undefined) {
+      this.filterNewsDaily.date_created_order &#x3D; orderBy[1]
+        ? AppConfig.SortType.ASC
+        : AppConfig.SortType.DESC;
+    } else {
+      this.filterNewsDaily.date_created_order &#x3D; null;
+    }
+    // rating
+    if (orderBy[2] !&#x3D;&#x3D; undefined) {
+      this.filterNewsDaily.rating_point_order &#x3D; orderBy[2]
+        ? AppConfig.SortType.ASC
+        : AppConfig.SortType.DESC;
+    } else {
+      this.filterNewsDaily.rating_point_order &#x3D; null;
+    }
+
+    this.loadDailyNews(this.filterNewsDaily);
+  }
+
+  onPagingWebsite(page) {
+    this.filterWebsite.page_number &#x3D; page;
+    this.loadNewsWebsite(this.filterWebsite);
+  }
+
+  onPagingDailyNews(page) {
+    this.filterNewsDaily.page_number &#x3D; page;
+    this.loadDailyNews(this.filterNewsDaily);
+  }
+
+  onPagingCategoriesOrg(page) {
+    this.filterCategoriesOrg.page_number &#x3D; page;
+    this.loadCategoriesOrg(this.filterCategoriesOrg);
+  }
+
+  onPagingListObjects(page) {
+    this.filterListObjects.page_number &#x3D; page;
+    this.loadListObjects(this.filterListObjects);
+  }
+
+  onPagingNewsBasket(page) {
+    this.filterNewsBasket.page_number &#x3D; page;
+    this.loadNewsBasket(this.filterNewsBasket);
+  }
+
+  onSearchWebsite(query) {
+    if (!isEmpty(query)) {
+      query &#x3D; query.trim();
+      this.filterWebsite.website_url &#x3D; query;
+    } else {
+      this.filterWebsite.website_url &#x3D; null;
+    }
+    this.loadNewsWebsite(this.filterWebsite);
+  }
+  //#endregion
+
+  //#region private methods
+  private loadTreeCategory() {
+    this.trees$ &#x3D; this.newsDomainApiService
+      .loadNewsDomain()
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+  }
+
+  private loadCategoriesOrg(filter?: {
+    page_number?: string;
+    page_size?: string;
+    object_type: string;
+    object_name: string;
+  }) {
+    this.categoriesOrg$ &#x3D; this.monitorObjectsService
+      .loadListObjectsAdvancedSearch(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.categoriesOrg$.subscribe(data &#x3D;&gt; (this.categoriesOrg &#x3D; data));
+  }
+
+  private loadNewsBasket(filter?: {
+    page_number?: string;
+    page_size?: string;
+  }) {
+    this.newsBasket$ &#x3D; this.newsBasketService
+      .loadNewsBasketAdvancedSearch(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.newsBasket$.subscribe(data &#x3D;&gt; (this.newsBasket &#x3D; data));
+  }
+
+  private loadDailyNews(filter?: {
+    page_number?: string;
+    page_size?: string;
+    title_order?: string; // or
+    date_created_order?: string; // or
+    rating_point_order?: string; // or
+  }) {
+    this.dailyNews$ &#x3D; this.newsService
+      .loadDailyNewsAdvancedSearch(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.dailyNews$.subscribe(data &#x3D;&gt; (this.dailyNews &#x3D; data));
+  }
+
+  private loadNews(
+    filter?: {
+      page_number?: string;
+      page_size?: string;
+      from_date?: string;
+      to_date?: string;
+      table_names: string;
+      order_by?: string; // field desc/asc
+    },
+    data?: { field_name: string; field_value: string }[]
+  ) {
+    this.news$ &#x3D; this.newsService.loadNewAdvancedSearch(filter, data).pipe(
+      takeUntil(this.destroyed$),
+      catchError(this.catchError),
+      finalize(() &#x3D;&gt; {
+        this.isNewsLoading &#x3D; true;
+      })
+    );
+  }
+  private loadListObjects(filter?: {
+    page_number?: string;
+    page_size?: string;
+    object_type: string;
+    object_name: string;
+  }) {
+    this.listObjects$ &#x3D; this.monitorObjectsService
+      .loadListObjectsAdvancedSearch(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.listObjects$.subscribe(data &#x3D;&gt; (this.listObjects &#x3D; data));
+  }
+  private catchError(err) {
+    logger.debug(err);
+    return of(null);
+  }
+  private loadNewsWebsite(filter?: {
+    page_number?: string;
+    page_size?: string;
+    website_url?: string;
+  }) {
+    this.website$ &#x3D; this.newsService
+      .loadListWebsite(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.website$.subscribe(data &#x3D;&gt; (this.wesites &#x3D; data));
+  }
+  //#endregion
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-custom-layouts pageTitle&#x3D;&quot;Bản tin&quot;&gt;
+  &lt;div leftCol&gt;
+    &lt;app-tree-category-vertical
+      #treeCategory
+      [TreeData]&#x3D;&quot;trees$ | async&quot;
+      (selectedNodes)&#x3D;&quot;onSelectedNode($event)&quot;
+    &gt;&lt;/app-tree-category-vertical&gt;
+    &lt;app-category-organization [categories]&#x3D;&quot;categoriesOrg?.data&quot;&gt;
+      &lt;app-paging-common
+        [hidden]&#x3D;&quot;!(categoriesOrg?.total &gt;&#x3D; filterCategoriesOrg.page_size)&quot;
+        [totals]&#x3D;&quot;categoriesOrg?.total&quot;
+        [size]&#x3D;&quot;filterCategoriesOrg.page_size&quot;
+        [pageIndex]&#x3D;&quot;filterCategoriesOrg.page_number&quot;
+        (changePage)&#x3D;&quot;onPagingCategoriesOrg($event.data)&quot;
+      &gt;&lt;/app-paging-common&gt;
+    &lt;/app-category-organization&gt;
+
+    &lt;app-news-basket [newsBasket]&#x3D;&quot;newsBasket?.data&quot;&gt;
+      &lt;!-- &lt;app-paging-common
+        [hidden]&#x3D;&quot;!newsBasket?.total &amp;&amp; (newsBasket?.total &gt;&#x3D; filterNewsBasket.page_size)&quot;
+        [totals]&#x3D;&quot;newsBasket?.total&quot;
+        [size]&#x3D;&quot;filterNewsBasket.page_size&quot;
+        [pageIndex]&#x3D;&quot;filterNewsBasket.page_number&quot;
+        (changePage)&#x3D;&quot;onPagingNewsBasket($event.data)&quot;
+      &gt;&lt;/app-paging-common&gt; --&gt;
+    &lt;/app-news-basket&gt;
+  &lt;/div&gt;
+  &lt;div rightCol&gt;
+    &lt;app-daily-news
+      [dailyNews]&#x3D;&quot;dailyNews?.data&quot;
+      (sortOrderField)&#x3D;&quot;sortOrderByNewDaily($event.data)&quot;
+    &gt;
+      &lt;app-paging-common
+        [hidden]&#x3D;&quot;!(dailyNews?.total &gt;&#x3D; filterNewsDaily.page_size)&quot;
+        [totals]&#x3D;&quot;dailyNews?.total&quot;
+        [size]&#x3D;&quot;filterNewsDaily.page_size&quot;
+        [pageIndex]&#x3D;&quot;filterNewsDaily.page_number&quot;
+        (changePage)&#x3D;&quot;onPagingDailyNews($event.data)&quot;
+      &gt;&lt;/app-paging-common&gt;
+    &lt;/app-daily-news&gt;
+    &lt;app-list-objects [listObjects]&#x3D;&quot;listObjects?.data&quot;&gt;
+      &lt;app-paging-common
+        [hidden]&#x3D;&quot;!(listObjects?.total &gt;&#x3D; filterListObjects.page_size)&quot;
+        [totals]&#x3D;&quot;listObjects?.total&quot;
+        [size]&#x3D;&quot;filterListObjects.page_size&quot;
+        [pageIndex]&#x3D;&quot;filterListObjects.page_number&quot;
+        (changePage)&#x3D;&quot;onPagingListObjects($event.data)&quot;
+      &gt;&lt;/app-paging-common
+    &gt;&lt;/app-list-objects&gt;
+  &lt;/div&gt;
+  &lt;div mainContainer&gt;
+    &lt;app-form-search-news-advanced
+      (searchSubmit)&#x3D;&quot;onSearch($event.data)&quot;
+      [languages]&#x3D;&quot;languages&quot;
+      [websites]&#x3D;&quot;wesites?.data&quot;
+    &gt;
+      &lt;div inputsearch style&#x3D;&quot;display: flex; flex-wrap: wrap;padding: 10px;&quot;&gt;
+        &lt;mat-form-field floatLabel&#x3D;&quot;never&quot; style&#x3D;&quot;width: 100%;flex: 1&quot;&gt;
+          &lt;input
+            #queryWebsite
+            matInput
+            placeholder&#x3D;&quot;Nhập website cần tìm&quot;
+            (keyup.enter)&#x3D;&quot;onSearchWebsite(queryWebsite.value)&quot;
+            (keydown)&#x3D;&quot;$event.stopPropagation()&quot;
+          /&gt;
+          &lt;mat-hint&gt;Ví dụ: baomoi, vnexpress, dantri,...&lt;/mat-hint&gt;
+        &lt;/mat-form-field&gt;
+        &lt;button mat-icon-button (click)&#x3D;&quot;onSearchWebsite(queryWebsite.value)&quot;&gt;
+          &lt;mat-icon&gt;search&lt;/mat-icon&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;app-paging-common
+        website
+        [totals]&#x3D;&quot;wesites?.total&quot;
+        [size]&#x3D;&quot;filterWebsite.page_size&quot;
+        [pageIndex]&#x3D;&quot;filterWebsite.page_number&quot;
+        (changePage)&#x3D;&quot;onPagingWebsite($event.data)&quot;
+      &gt;&lt;/app-paging-common&gt;
+    &lt;/app-form-search-news-advanced&gt;
+
+    &lt;app-content-loader
+      [hidden]&#x3D;&quot;isNewsLoading&quot;
+      @fadeInAnimation
+    &gt;&lt;/app-content-loader&gt;
+
+    &lt;div class&#x3D;&quot;news-container&quot; [ngClass]&#x3D;&quot;{ &#x27;is-mobile&#x27;: isMobile$ | async }&quot;&gt;
+      &lt;div
+        class&#x3D;&quot;item-domain&quot;
+        *ngFor&#x3D;&quot;let itemDomain of news$ | async&quot;
+        @fadeInAnimation
+      &gt;
+        &lt;app-news-with-domain
+          [title]&#x3D;&quot;
+            treeCategory.getSelectNodeTree[itemDomain?.table_name]?.name ||
+            treeCategory.getDictionaryName[itemDomain?.table_name]
+          &quot;
+          [data]&#x3D;&quot;itemDomain?.data&quot;
+        &gt;
+        &lt;/app-news-with-domain&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/app-custom-layouts&gt;
+
+&lt;!-- Creates a layout with a left and right sidenav and implicit content. --&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./dash-board.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">::ng-deep body.DashBoardComponent .sidenav {
+  width: 300px !important;
+}
+::ng-deep body.DashBoardComponent .logo_is-desktop {
+  min-width: 300px !important;
+}
+
+[hidden] {
+  display: none;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-custom-layouts pageTitle="Bản tin">  <div leftCol>    <app-tree-category-vertical      #treeCategory      [TreeData]="trees$ | async"      (selectedNodes)="onSelectedNode($event)"    ></app-tree-category-vertical>    <app-category-organization [categories]="categoriesOrg?.data">      <app-paging-common        [hidden]="!(categoriesOrg?.total >= filterCategoriesOrg.page_size)"        [totals]="categoriesOrg?.total"        [size]="filterCategoriesOrg.page_size"        [pageIndex]="filterCategoriesOrg.page_number"        (changePage)="onPagingCategoriesOrg($event.data)"      ></app-paging-common>    </app-category-organization>    <app-news-basket [newsBasket]="newsBasket?.data">      <!-- <app-paging-common        [hidden]="!newsBasket?.total && (newsBasket?.total >= filterNewsBasket.page_size)"        [totals]="newsBasket?.total"        [size]="filterNewsBasket.page_size"        [pageIndex]="filterNewsBasket.page_number"        (changePage)="onPagingNewsBasket($event.data)"      ></app-paging-common> -->    </app-news-basket>  </div>  <div rightCol>    <app-daily-news      [dailyNews]="dailyNews?.data"      (sortOrderField)="sortOrderByNewDaily($event.data)"    >      <app-paging-common        [hidden]="!(dailyNews?.total >= filterNewsDaily.page_size)"        [totals]="dailyNews?.total"        [size]="filterNewsDaily.page_size"        [pageIndex]="filterNewsDaily.page_number"        (changePage)="onPagingDailyNews($event.data)"      ></app-paging-common>    </app-daily-news>    <app-list-objects [listObjects]="listObjects?.data">      <app-paging-common        [hidden]="!(listObjects?.total >= filterListObjects.page_size)"        [totals]="listObjects?.total"        [size]="filterListObjects.page_size"        [pageIndex]="filterListObjects.page_number"        (changePage)="onPagingListObjects($event.data)"      ></app-paging-common    ></app-list-objects>  </div>  <div mainContainer>    <app-form-search-news-advanced      (searchSubmit)="onSearch($event.data)"      [languages]="languages"      [websites]="wesites?.data"    >      <div inputsearch style="display: flex; flex-wrap: wrap;padding: 10px;">        <mat-form-field floatLabel="never" style="width: 100%;flex: 1">          <input            #queryWebsite            matInput            placeholder="Nhập website cần tìm"            (keyup.enter)="onSearchWebsite(queryWebsite.value)"            (keydown)="$event.stopPropagation()"          />          <mat-hint>Ví dụ: baomoi, vnexpress, dantri,...</mat-hint>        </mat-form-field>        <button mat-icon-button (click)="onSearchWebsite(queryWebsite.value)">          <mat-icon>search</mat-icon>        </button>      </div>      <app-paging-common        website        [totals]="wesites?.total"        [size]="filterWebsite.page_size"        [pageIndex]="filterWebsite.page_number"        (changePage)="onPagingWebsite($event.data)"      ></app-paging-common>    </app-form-search-news-advanced>    <app-content-loader      [hidden]="isNewsLoading"      @fadeInAnimation    ></app-content-loader>    <div class="news-container" [ngClass]="{ \'is-mobile\': isMobile$ | async }">      <div        class="item-domain"        *ngFor="let itemDomain of news$ | async"        @fadeInAnimation      >        <app-news-with-domain          [title]="            treeCategory.getSelectNodeTree[itemDomain?.table_name]?.name ||            treeCategory.getDictionaryName[itemDomain?.table_name]          "          [data]="itemDomain?.data"        >        </app-news-with-domain>      </div>    </div>  </div></app-custom-layouts><!-- Creates a layout with a left and right sidenav and implicit content. --></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
+    var DIRECTIVES = [{'name': 'DefaultImageDirective', 'selector': 'img[default]'},{'name': 'RenderDebugDirective', 'selector': '[renderDebug]'}];
+    var ACTUAL_COMPONENT = {'name': 'DashBoardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DashBoardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
