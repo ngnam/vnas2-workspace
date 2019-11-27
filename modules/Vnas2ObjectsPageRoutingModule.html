@@ -35,7 +35,7 @@
 
 <ol class="breadcrumb">
     <li>Modules</li>
-    <li>LayoutsRoutingModule</li>
+    <li>Vnas2ObjectsPageRoutingModule</li>
 </ol>
 
 
@@ -55,7 +55,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>projects/vnas2-app/src/app/layouts/layouts-routing.module.ts</code>
+            <code>projects/vnas2-objects-page/src/lib/vnas2-object-page.routing.ts</code>
         </p>
 
 
@@ -73,47 +73,41 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
-import { LayoutsComponent } from &#x27;./layouts.component&#x27;;
+import { Vnas2ObjectPageComponent } from &#x27;./layouts/vnas2-object-page/vnas2-object-page.component&#x27;;
+import { AboutObjectComponent } from &#x27;./pages/about-object/about-object.component&#x27;;
+import { CrossAnalysticComponent } from &#x27;./pages/cross-analystic/cross-analystic.component&#x27;;
 
 const routes: Routes &#x3D; [
   {
-    path: &#x27;app&#x27;,
-    component: LayoutsComponent,
+    path: &#x27;&#x27;,
+    component: Vnas2ObjectPageComponent,
     children: [
       {
-        path: &#x27;dashboard&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;../dashboard/dashboard.module&#x27;).then(m &#x3D;&gt; m.DashboardModule)&quot;
-      },
-      // lazy load feature module here
-      {
-        path: &#x27;settings&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;@vnas2-workspace/vnas2-settings&#x27;).then(\
-            m &#x3D;&gt; m.Vnas2SettingsModule\
-          )&quot;
+        path: &#x27;about&#x27;,
+        component: AboutObjectComponent,
+        data: { title: &#x27;Thông tin đối tượng&#x27; }
       },
       {
-        path: &#x27;objects-page&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;@vnas2-workspace/vnas2-objects-page&#x27;).then(\
-            m &#x3D;&gt; m.Vnas2ObjectsPageModule\
-          )&quot;
+        path: &#x27;cross-analystic&#x27;,
+        component: CrossAnalysticComponent,
+        data: { title: &#x27;Phân tích chéo&#x27; }
+      },
+      // default set router redirect path url prefix
+      {
+        path: &#x27;&#x27;,
+        redirectTo: &#x27;cross-analystic&#x27;,
+        pathMatch: &#x27;prefix&#x27;
       }
     ]
-  },
-  {
-    path: &#x27;&#x27;,
-    redirectTo: &#x27;/app/dashboard&#x27;,
-    pathMatch: &#x27;full&#x27;
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: []
 })
-export class LayoutsRoutingModule {}
+export class Vnas2ObjectsPageRoutingModule {}
 </code></pre>
     </div>
 </div>
@@ -149,7 +143,7 @@ export class LayoutsRoutingModule {}
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'LayoutsRoutingModule.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'Vnas2ObjectsPageRoutingModule.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

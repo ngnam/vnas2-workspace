@@ -28,103 +28,134 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content module">
+               <div class="content interface">
                    <div class="content-data">
 
 
 
+
+
+
+
+
+
+
+
+
 <ol class="breadcrumb">
-    <li>Modules</li>
-    <li>LayoutsRoutingModule</li>
+  <li>Interfaces</li>
+  <li>ValidationResult</li>
 </ol>
 
-
 <ul class="nav nav-tabs" role="tablist">
-    <li  class="active" >
-        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
-    </li>
-    <li >
-        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-    </li>
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
 </ul>
 
 <div class="tab-content">
     <div class="tab-pane fade active in" id="c-info">
-
         <p class="comment">
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>projects/vnas2-app/src/app/layouts/layouts-routing.module.ts</code>
+            <code>projects/vnas2-settings/src/lib/components/vnas2-settings-social-object-form/password.validator.ts</code>
         </p>
 
 
 
 
-        <div class="container-fluid module">
-            <div class="row">
-            </div>
-        </div>
 
+            <section>
+    <h3 id="inputs">Indexable</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <code>[key: string]:        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">projects/vnas2-settings/src/lib/components/vnas2-settings-social-object-form/password.validator.ts:4</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
 
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
-import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
-import { LayoutsComponent } from &#x27;./layouts.component&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FormControl } from &#x27;@angular/forms&#x27;;
 
-const routes: Routes &#x3D; [
-  {
-    path: &#x27;app&#x27;,
-    component: LayoutsComponent,
-    children: [
-      {
-        path: &#x27;dashboard&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;../dashboard/dashboard.module&#x27;).then(m &#x3D;&gt; m.DashboardModule)&quot;
-      },
-      // lazy load feature module here
-      {
-        path: &#x27;settings&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;@vnas2-workspace/vnas2-settings&#x27;).then(\
-            m &#x3D;&gt; m.Vnas2SettingsModule\
-          )&quot;
-      },
-      {
-        path: &#x27;objects-page&#x27;,
-        loadChildren: () &#x3D;&gt;
-          &quot;import(&#x27;@vnas2-workspace/vnas2-objects-page&#x27;).then(\
-            m &#x3D;&gt; m.Vnas2ObjectsPageModule\
-          )&quot;
-      }
-    ]
-  },
-  {
-    path: &#x27;&#x27;,
-    redirectTo: &#x27;/app/dashboard&#x27;,
-    pathMatch: &#x27;full&#x27;
+export interface ValidationResult {
+  [key: string]: boolean;
+}
+
+export class PasswordValidator {
+  public static strong(control: FormControl): ValidationResult {
+    const hasNumber &#x3D; /(?&#x3D;\D*\d)/.test(control.value);
+    const hasUpper &#x3D; /(?&#x3D;[^A-Z]*[A-Z])/.test(control.value);
+    const hasLower &#x3D; /(?&#x3D;[^a-z]*[a-z])/.test(control.value);
+    const minLength &#x3D; /.{8,20}/.test(control.value);
+    // console.log(&#x27;Num, Upp, Low&#x27;, hasNumber, hasUpper, hasLower);
+    const valid &#x3D; hasNumber &amp;&amp; hasUpper &amp;&amp; hasLower &amp;&amp; minLength;
+    if (!valid) {
+      // return what´s not valid
+      return { strong: true };
+    }
+    return null;
   }
-];
 
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class LayoutsRoutingModule {}
+  public static strongHasNumber(control: FormControl): ValidationResult {
+    const hasNumber &#x3D; /(?&#x3D;\D*\d)/.test(control.value);
+    const valid &#x3D; hasNumber;
+    if (!valid) {
+      // return what´s not valid
+      return { strongHasNumber: true };
+    }
+    return null;
+  }
+
+  public static strongHasUpper(control: FormControl): ValidationResult {
+    const hasUpper &#x3D; /(?&#x3D;[^A-Z]*[A-Z])/.test(control.value);
+    const valid &#x3D; hasUpper;
+    if (!valid) {
+      // return what´s not valid
+      return { strongHasUpper: true };
+    }
+    return null;
+  }
+
+  public static strongHasLower(control: FormControl): ValidationResult {
+    const hasLower &#x3D; /(?&#x3D;[^a-z]*[a-z])/.test(control.value);
+    const valid &#x3D; hasLower;
+    if (!valid) {
+      // return what´s not valid
+      return { strongHasLower: true };
+    }
+    return null;
+  }
+
+  public static strongMinLength(control: FormControl): ValidationResult {
+    const minLength &#x3D; /.{8,20}$/.test(control.value);
+    const valid &#x3D; minLength;
+    if (!valid) {
+      // return what´s not valid
+      return { strongMinLength: true };
+    }
+    return null;
+  }
+}
 </code></pre>
     </div>
 </div>
-
-
-
-
-
-
-
-
 
 
                    
@@ -148,8 +179,8 @@ export class LayoutsRoutingModule {}
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
-            var COMPODOC_CURRENT_PAGE_URL = 'LayoutsRoutingModule.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'ValidationResult.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

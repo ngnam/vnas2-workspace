@@ -183,6 +183,11 @@
                                 <a href="#catchError">catchError</a>
                             </li>
                             <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createSettings">createSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#loadSocialObjects">loadSocialObjects</a>
                             </li>
                             <li>
@@ -205,11 +210,19 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
+                                <a href="#removeSettings">removeSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#searchText">searchText</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
                                 <a href="#updatePageTitle">updatePageTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updateSettings">updateSettings</a>
                             </li>
                             <li>
                                     <span class="modifier">Protected</span>
@@ -245,12 +258,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, breakpointObserver: BreakpointObserver, vnas2SettingsSandboxService: <a href="../injectables/Vnas2SettingsSandboxService.html">Vnas2SettingsSandboxService</a>, socialObjectService: <a href="../injectables/SocialObjectService.html">SocialObjectService</a>, appDialogService: <a href="../injectables/IAppDialogService.html">IAppDialogService</a>)</code>
+<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, breakpointObserver: BreakpointObserver, vnas2SettingsSandboxService: <a href="../injectables/Vnas2SettingsSandboxService.html">Vnas2SettingsSandboxService</a>, socialObjectService: <a href="../injectables/SocialObjectService.html">SocialObjectService</a>, appDialogService: <a href="../injectables/IAppDialogService.html">IAppDialogService</a>, notificationService: <a href="../injectables/SnackBarService.html">SnackBarService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:49</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:50</a></div>
                             </td>
                         </tr>
 
@@ -339,6 +352,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SnackBarService.html" target="_self" >SnackBarService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -381,8 +406,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="149"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:149</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:208</a></div>
                 </td>
             </tr>
 
@@ -429,9 +454,82 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="createSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            createSettings
+                        </b>
+                        <a href="#createSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createSettings(data: <a href="../interfaces/SocialObjectDTO.html">SocialObjectDTO</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../interfaces/SocialObjectDTO.html" target="_self" >SocialObjectDTO</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="loadSocialObjects"></a>
                     <span class="name">
                         <b>
+                            <span class="modifier">Private</span>
                             loadSocialObjects
                         </b>
                         <a href="#loadSocialObjects"><span class="icon ion-ios-link"></span></a>
@@ -440,15 +538,16 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>loadSocialObjects(filter: literal type)</code>
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loadSocialObjects(filter: literal type)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="73"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:73</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:144</a></div>
                 </td>
             </tr>
 
@@ -517,8 +616,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="68"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:68</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:70</a></div>
                 </td>
             </tr>
 
@@ -556,8 +655,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="63"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:63</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:65</a></div>
                 </td>
             </tr>
 
@@ -588,15 +687,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onConfirmDeleteObject(object: <a href="../interfaces/SocialObject.html">SocialObject</a>)</code>
+<code>onConfirmDeleteObject(object?: <a href="../interfaces/SocialObject.html">SocialObject</a>)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="112"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:112</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:119</a></div>
                 </td>
             </tr>
 
@@ -622,7 +721,7 @@
                                     </td>
 
                                     <td>
-                                        No
+                                        Yes
                                     </td>
 
 
@@ -665,8 +764,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="103"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:103</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:110</a></div>
                 </td>
             </tr>
 
@@ -735,8 +834,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="108"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:108</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:115</a></div>
                 </td>
             </tr>
 
@@ -805,8 +904,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="80"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:80</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:76</a></div>
                 </td>
             </tr>
 
@@ -857,6 +956,78 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="removeSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            removeSettings
+                        </b>
+                        <a href="#removeSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSettings(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="searchText"></a>
                     <span class="name">
                         <b>
@@ -877,8 +1048,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="142"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:142</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:201</a></div>
                 </td>
             </tr>
 
@@ -949,8 +1120,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:194</a></div>
                 </td>
             </tr>
 
@@ -961,6 +1132,90 @@
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            updateSettings
+                        </b>
+                        <a href="#updateSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateSettings(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, data: <a href="../interfaces/SocialObjectDTO.html">SocialObjectDTO</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../interfaces/SocialObjectDTO.html" target="_self" >SocialObjectDTO</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -1273,7 +1528,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:50</a></div>
                             </td>
                         </tr>
 
@@ -1308,7 +1563,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:41</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -1345,7 +1600,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:35</a></div>
                             </td>
                         </tr>
 
@@ -1372,7 +1627,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:33</a></div>
                             </td>
                         </tr>
 
@@ -1399,7 +1654,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:31</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings-social-object/vnas2-settings-social-object.component.ts:32</a></div>
                             </td>
                         </tr>
 
@@ -1571,7 +1826,8 @@ import {
   BaseComponent,
   isNotEmpty,
   Logger,
-  AppConfig
+  AppConfig,
+  SnackBarService
 } from &#x27;@vnas2-workspace/vnas2-core&#x27;;
 import { Observable, of, Subject } from &#x27;rxjs&#x27;;
 import { catchError, map, shareReplay, takeUntil } from &#x27;rxjs/operators&#x27;;
@@ -1614,7 +1870,8 @@ export class Vnas2SettingsSocialObjectComponent extends BaseComponent
     private breakpointObserver: BreakpointObserver,
     private vnas2SettingsSandboxService: Vnas2SettingsSandboxService,
     private socialObjectService: SocialObjectService,
-    private appDialogService: IAppDialogService
+    private appDialogService: IAppDialogService,
+    private notificationService: SnackBarService
   ) {
     super(injector);
     this.filterSocialObjects.page_size &#x3D; this.pageSize;
@@ -1631,33 +1888,38 @@ export class Vnas2SettingsSocialObjectComponent extends BaseComponent
     this.destroyed$.complete();
   }
   //#region public method
-  loadSocialObjects(filter: { page_size?: string; page_number?: string }) {
-    this.socialObjects$ &#x3D; this.socialObjectService
-      .loadSocialObjectAdvancedSearch(filter)
-      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
-    this.socialObjects$.subscribe(result &#x3D;&gt; (this.socialObjects &#x3D; result));
-  }
 
   onSubmitForm(event: {
     data: SocialObjectDTO;
     type: string;
     socialObjectId?: number;
   }) {
-    if (event.type &#x3D;&#x3D;&#x3D; AppConfig.ActionType.INSERT) {
-      this.socialObjectService.createSocialObject(event.data).subscribe(res &#x3D;&gt; {
-        logger.debug(res);
-        this.loadSocialObjects(this.filterSocialObjects);
-      });
-    } else if (
-      event.type &#x3D;&#x3D;&#x3D; AppConfig.ActionType.UPDATE &amp;&amp;
-      event.socialObjectId
-    ) {
-      this.socialObjectService
-        .updateSocialObject(event.socialObjectId, event.data)
-        .subscribe(res &#x3D;&gt; {
-          logger.debug(res);
-          this.loadSocialObjects(this.filterSocialObjects);
+    const { data, type, socialObjectId } &#x3D; event;
+    if (!data || !type) {
+      return;
+    }
+    data.status &#x3D; +data.status;
+    data.object_type &#x3D; +data.object_type;
+    switch (type) {
+      case AppConfig.ActionType.INSERT:
+        const insert$ &#x3D; this.createSettings(data);
+        insert$.subscribe(response &#x3D;&gt; {
+          if (response) {
+            logger.debug(response);
+            this.loadSocialObjects(this.filterSocialObjects);
+          }
         });
+        break;
+
+      case AppConfig.ActionType.UPDATE:
+        const update$ &#x3D; this.updateSettings(socialObjectId, data);
+        update$.subscribe(response &#x3D;&gt; {
+          if (response) {
+            logger.debug(response);
+            this.loadSocialObjects(this.filterSocialObjects);
+          }
+        });
+        break;
     }
   }
 
@@ -1670,8 +1932,11 @@ export class Vnas2SettingsSocialObjectComponent extends BaseComponent
     this.searchText(query);
   }
 
-  onConfirmDeleteObject(object: SocialObject) {
+  onConfirmDeleteObject(object?: SocialObject) {
     logger.debug(object);
+    if (!object) {
+      return;
+    }
     const dialogRef &#x3D; this.appDialogService.openConfirmYesNoDialog(
       &#x60;Xác nhận xóa ${object.account_name}&#x60;,
       AppSettingsConfirmComponent,
@@ -1681,16 +1946,65 @@ export class Vnas2SettingsSocialObjectComponent extends BaseComponent
     );
     dialogRef.subscribe(result &#x3D;&gt; {
       if (result) {
-        this.socialObjectService
-          .removeSocialObject(object.social_obj_id)
-          .subscribe(res &#x3D;&gt; {
-            logger.debug(res);
+        this.removeSettings(object.social_obj_id).subscribe(res &#x3D;&gt; {
+          logger.debug(res);
+          if (res) {
             this.loadSocialObjects(this.filterSocialObjects);
-          });
+          }
+        });
       }
     });
   }
   //#endregion
+
+  private loadSocialObjects(filter: {
+    page_size?: string;
+    page_number?: string;
+  }) {
+    this.socialObjects$ &#x3D; this.socialObjectService
+      .loadSocialObjectAdvancedSearch(filter)
+      .pipe(takeUntil(this.destroyed$), catchError(this.catchError));
+    this.socialObjects$.subscribe(result &#x3D;&gt; (this.socialObjects &#x3D; result));
+  }
+
+  private createSettings(data: SocialObjectDTO) {
+    return this.socialObjectService.createSocialObject(data).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} &lt;br&gt; ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
+  }
+
+  private updateSettings(id: number, data: SocialObjectDTO) {
+    return this.socialObjectService.updateSocialObject(id, data).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} &lt;br&gt; ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
+  }
+
+  private removeSettings(id: number) {
+    return this.socialObjectService.removeSocialObject(id).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} \n ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
+  }
 
   //#region private method
   private updatePageTitle() {
@@ -1780,7 +2094,7 @@ export class Vnas2SettingsSocialObjectComponent extends BaseComponent
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="flex-container" [ngClass]="{ \'is-mobile\': isMobile$ | async }">  <div class="left-container">    <app-vnas2-settings-list-social-objects      [socialObjects]="socialObjects?.data"      [objectType]="titlePage"      (submitFormSearch)="onSearchSocialObject($event.data)"      (selectItem)="settingForm.setValueForm($event.data)"      (create)="settingForm.resetForm()"    >      <app-paging-common        [totals]="socialObjects?.total"        [size]="filterSocialObjects.page_size"        [pageIndex]="filterSocialObjects.page_number"        (changePage)="onGoToPageSocialObject($event.data)"      ></app-paging-common>    </app-vnas2-settings-list-social-objects>  </div>  <div class="right-container">    <app-vnas2-settings-social-object-form      #settingForm      [titleForm]="titlePage"      (submitForm)="onSubmitForm($event)"      (deleteData)="onConfirmDeleteObject($event.data)"    >    </app-vnas2-settings-social-object-form>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
+    var COMPONENTS = [{'name': 'AboutObjectComponent', 'selector': 'app-about-object'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'CrossAnalysticComponent', 'selector': 'app-cross-analystic'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2ObjectPageComponent', 'selector': 'app-vnas2-object-page'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
     var DIRECTIVES = [{'name': 'DefaultImageDirective', 'selector': 'img[default]'},{'name': 'RenderDebugDirective', 'selector': '[renderDebug]'}];
     var ACTUAL_COMPONENT = {'name': 'Vnas2SettingsSocialObjectComponent'};
 </script>

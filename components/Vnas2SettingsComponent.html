@@ -187,6 +187,10 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
+                                <a href="#createSettings">createSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#loadMonitorObjects">loadMonitorObjects</a>
                             </li>
                             <li>
@@ -213,11 +217,19 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
+                                <a href="#removeSettings">removeSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#searchText">searchText</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
                                 <a href="#updatePageTitle">updatePageTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updateSettings">updateSettings</a>
                             </li>
                             <li>
                                     <span class="modifier">Protected</span>
@@ -253,12 +265,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, vnas2SettingsSandboxService: <a href="../injectables/Vnas2SettingsSandboxService.html">Vnas2SettingsSandboxService</a>, monitorObjectsService: <a href="../injectables/MonitorObjectsService.html">MonitorObjectsService</a>, appDialogService: <a href="../injectables/IAppDialogService.html">IAppDialogService</a>, breakpointObserver: BreakpointObserver)</code>
+<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, vnas2SettingsSandboxService: <a href="../injectables/Vnas2SettingsSandboxService.html">Vnas2SettingsSandboxService</a>, monitorObjectsService: <a href="../injectables/MonitorObjectsService.html">MonitorObjectsService</a>, appDialogService: <a href="../injectables/IAppDialogService.html">IAppDialogService</a>, breakpointObserver: BreakpointObserver, notificationService: <a href="../injectables/SnackBarService.html">SnackBarService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:48</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:54</a></div>
                             </td>
                         </tr>
 
@@ -347,6 +359,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SnackBarService.html" target="_self" >SnackBarService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -389,8 +413,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="228"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:228</a></div>
                 </td>
             </tr>
 
@@ -410,6 +434,78 @@
                             <tbody>
                                 <tr>
                                     <td>err</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            createSettings
+                        </b>
+                        <a href="#createSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createSettings(data: <a href="../interfaces/MonitorObjectDTO.html">MonitorObjectDTO</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../interfaces/MonitorObjectDTO.html" target="_self" >MonitorObjectDTO</a></code>
+                                    </td>
 
                                     <td>
                                         No
@@ -457,8 +553,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="109"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:109</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:202</a></div>
                 </td>
             </tr>
 
@@ -529,8 +625,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="121"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:121</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="214"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:214</a></div>
                 </td>
             </tr>
 
@@ -568,8 +664,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="68"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:68</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:75</a></div>
                 </td>
             </tr>
 
@@ -607,8 +703,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="62"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:62</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:69</a></div>
                 </td>
             </tr>
 
@@ -639,15 +735,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onConfirmDeleteObject(object)</code>
+<code>onConfirmDeleteObject(event: literal type)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="86"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:86</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:124</a></div>
                 </td>
             </tr>
 
@@ -661,12 +757,16 @@
                             <thead>
                                 <tr>
                                     <td>Name</td>
+                                    <td>Type</td>
                                     <td>Optional</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>object</td>
+                                    <td>event</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
 
                                     <td>
                                         No
@@ -712,8 +812,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="73"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:73</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:80</a></div>
                 </td>
             </tr>
 
@@ -778,8 +878,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="78"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:78</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:85</a></div>
                 </td>
             </tr>
 
@@ -841,15 +941,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onUpdateSetting(data)</code>
+<code>onUpdateSetting(event)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="82"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:82</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:89</a></div>
                 </td>
             </tr>
 
@@ -868,7 +968,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>data</td>
+                                    <td>event</td>
 
                                     <td>
                                         No
@@ -883,6 +983,78 @@
                     </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            removeSettings
+                        </b>
+                        <a href="#removeSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSettings(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                     </div>
                     <div class="io-description">
@@ -916,8 +1088,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="98"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:98</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:191</a></div>
                 </td>
             </tr>
 
@@ -988,8 +1160,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="127"
-                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:127</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="220"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:220</a></div>
                 </td>
             </tr>
 
@@ -1000,6 +1172,90 @@
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSettings"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            updateSettings
+                        </b>
+                        <a href="#updateSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateSettings(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, data: <a href="../interfaces/MonitorObjectDTO.html">MonitorObjectDTO</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../interfaces/MonitorObjectDTO.html" target="_self" >MonitorObjectDTO</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -1312,7 +1568,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:48</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:54</a></div>
                             </td>
                         </tr>
 
@@ -1349,7 +1605,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:37</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:43</a></div>
                             </td>
                         </tr>
 
@@ -1386,7 +1642,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:36</a></div>
                             </td>
                         </tr>
 
@@ -1413,7 +1669,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -1440,7 +1696,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:33</a></div>
                             </td>
                         </tr>
 
@@ -1467,7 +1723,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/vnas2-settings/src/lib/pages/vnas2-settings/vnas2-settings.component.ts:35</a></div>
                             </td>
                         </tr>
 
@@ -1634,17 +1890,23 @@ import {
   BaseComponent,
   Logger,
   isNotEmpty,
-  AppConfig
+  AppConfig,
+  SnackBarService
 } from &#x27;@vnas2-workspace/vnas2-core&#x27;;
 import {
   PagesModel,
   IAppDialogService
 } from &#x27;@vnas2-workspace/vnas2-ui-commons&#x27;;
-import { MonitorObjectsService } from &#x27;@vnas2-workspace/vnas2-api&#x27;;
+import {
+  MonitorObjectsService,
+  MonitorObjectDTO,
+  MonitorObject
+} from &#x27;@vnas2-workspace/vnas2-api&#x27;;
 import { Observable, Subject, of } from &#x27;rxjs&#x27;;
 import { takeUntil, catchError, map, shareReplay } from &#x27;rxjs/operators&#x27;;
 import { AppSettingsConfirmComponent } from &#x27;../../components/app-settings-confirm/app-settings-confirm.component&#x27;;
 import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
+import { query } from &#x27;@angular/animations&#x27;;
 const logger &#x3D; new Logger(&#x27;Vnas2SettingsComponent&#x27;);
 @Component({
   selector: &#x27;app-vnas2-settings&#x27;,
@@ -1681,7 +1943,8 @@ export class Vnas2SettingsComponent extends BaseComponent
     private vnas2SettingsSandboxService: Vnas2SettingsSandboxService,
     private monitorObjectsService: MonitorObjectsService,
     private appDialogService: IAppDialogService,
-    private breakpointObserver: BreakpointObserver
+    private breakpointObserver: BreakpointObserver,
+    private notificationService: SnackBarService
   ) {
     super(injector);
     this.filterMonitorObjects.page_number &#x3D; this.pageNumber;
@@ -1708,20 +1971,106 @@ export class Vnas2SettingsComponent extends BaseComponent
     this.searchText(query);
   }
 
-  onUpdateSetting(data) {
-    logger.debug(data);
+  onUpdateSetting(event) {
+    // destructor
+    const { id, data, type } &#x3D; event;
+    if (!data || !type) {
+      return;
+    }
+    data.status &#x3D; +data.status;
+    logger.debug(&#x27;onUpdateSetting&#x27;, type, data);
+    switch (type) {
+      case AppConfig.ActionType.INSERT:
+        // call func insert Settings
+        this.createSettings(data).subscribe(response &#x3D;&gt; {
+          if (response) {
+            logger.debug(&#x27;create---&#x27;, response);
+            this.notificationService.showSuccess(&#x60;Thêm mới ${this.titlePage}&#x60;);
+            this.loadMonitorObjects(this.filterMonitorObjects);
+          }
+        });
+        break;
+
+      case AppConfig.ActionType.UPDATE:
+        // call func update Settings
+        this.updateSettings(id, data).subscribe(response &#x3D;&gt; {
+          if (response) {
+            logger.debug(&#x27;update----&#x27;, response);
+            this.notificationService.showSuccess(
+              &#x60;Cấu hình ${this.titlePage} được cập nhật!&#x60;
+            );
+            this.loadMonitorObjects(this.filterMonitorObjects);
+          }
+        });
+        break;
+    }
   }
 
-  onConfirmDeleteObject(object) {
-    logger.debug(object);
+  onConfirmDeleteObject(event: { data: MonitorObject }) {
+    logger.debug(event);
+    const { data } &#x3D; event;
     const dialogRef &#x3D; this.appDialogService.openConfirmYesNoDialog(
-      &#x60;Xác nhận xóa ${object.object_name}&#x60;,
+      &#x60;Xác nhận xóa ${data.object_name}&#x60;,
       AppSettingsConfirmComponent,
       AppConfig.MESSAGE.ACCEPT,
       AppConfig.MESSAGE.CANCEL,
       AppConfig.MESSAGE.CONFIRM
     );
-    dialogRef.subscribe(result &#x3D;&gt; logger.debug(result));
+    dialogRef.subscribe(result &#x3D;&gt; {
+      logger.debug(result);
+      if (result) {
+        // call api delete
+        this.removeSettings(data.object_id).subscribe(response &#x3D;&gt; {
+          logger.debug(response);
+          if (response) {
+            this.notificationService.showSuccess(
+              &#x60;Danh mục đã bị xóa khỏi cơ sở dữ liệu!&#x60;
+            );
+            this.loadMonitorObjects(this.filterMonitorObjects);
+          }
+        });
+        logger.debug(&#x27;// call api delete&#x27;);
+      }
+    });
+  }
+
+  private createSettings(data: MonitorObjectDTO) {
+    return this.monitorObjectsService.createMonitorObject(data).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} &lt;br&gt; ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
+  }
+
+  private updateSettings(id: number, data: MonitorObjectDTO) {
+    return this.monitorObjectsService.updateMonitorObject(id, data).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} &lt;br&gt; ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
+  }
+
+  private removeSettings(id: number) {
+    return this.monitorObjectsService.removeMonitorObject(id).pipe(
+      takeUntil(this.destroyed$),
+      catchError((err: any) &#x3D;&gt; {
+        const { error } &#x3D; err;
+        this.notificationService.showError(
+          &#x60;${AppConfig.MESSAGE.ERROR_SERVER} \n ${error!.detail}&#x60;
+        );
+        return this.catchError(err);
+      })
+    );
   }
 
   private searchText(query: string) {
@@ -1792,8 +2141,8 @@ export class Vnas2SettingsComponent extends BaseComponent
       #settingForm
       [titleForm]&#x3D;&quot;titlePage&quot;
       [objectTypes]&#x3D;&quot;(objectTypes$ | async)?.data&quot;
-      (submitForm)&#x3D;&quot;onUpdateSetting($event.data)&quot;
-      (deleteData)&#x3D;&quot;onConfirmDeleteObject($event.data)&quot;
+      (submitForm)&#x3D;&quot;onUpdateSetting($event)&quot;
+      (deleteData)&#x3D;&quot;onConfirmDeleteObject($event)&quot;
     &gt;&lt;/app-vnas2-settings-form&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -1834,8 +2183,8 @@ export class Vnas2SettingsComponent extends BaseComponent
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="flex-container" [ngClass]="{ \'is-mobile\': isMobile$ | async }">  <div class="left-container">    <app-vnas2-settings-list-item      [ObjectType]="titlePage"      [monitors]="monitorObjects?.data"      (submitForm)="onSearchMonitor($event.data)"      (create)="settingForm.resetForm()"      (selectItem)="settingForm.setValueForm($event.data)"    >      <app-paging-common        [totals]="monitorObjects?.total"        [size]="filterMonitorObjects.page_size"        [pageIndex]="filterMonitorObjects.page_number"        (changePage)="onGoToPageMonitor($event.data)"      ></app-paging-common>    </app-vnas2-settings-list-item>  </div>  <div class="right-container">    <app-vnas2-settings-form      #settingForm      [titleForm]="titlePage"      [objectTypes]="(objectTypes$ | async)?.data"      (submitForm)="onUpdateSetting($event.data)"      (deleteData)="onConfirmDeleteObject($event.data)"    ></app-vnas2-settings-form>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
+        var COMPONENT_TEMPLATE = '<div><div class="flex-container" [ngClass]="{ \'is-mobile\': isMobile$ | async }">  <div class="left-container">    <app-vnas2-settings-list-item      [ObjectType]="titlePage"      [monitors]="monitorObjects?.data"      (submitForm)="onSearchMonitor($event.data)"      (create)="settingForm.resetForm()"      (selectItem)="settingForm.setValueForm($event.data)"    >      <app-paging-common        [totals]="monitorObjects?.total"        [size]="filterMonitorObjects.page_size"        [pageIndex]="filterMonitorObjects.page_number"        (changePage)="onGoToPageMonitor($event.data)"      ></app-paging-common>    </app-vnas2-settings-list-item>  </div>  <div class="right-container">    <app-vnas2-settings-form      #settingForm      [titleForm]="titlePage"      [objectTypes]="(objectTypes$ | async)?.data"      (submitForm)="onUpdateSetting($event)"      (deleteData)="onConfirmDeleteObject($event)"    ></app-vnas2-settings-form>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutObjectComponent', 'selector': 'app-about-object'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'CrossAnalysticComponent', 'selector': 'app-cross-analystic'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2ObjectPageComponent', 'selector': 'app-vnas2-object-page'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
     var DIRECTIVES = [{'name': 'DefaultImageDirective', 'selector': 'img[default]'},{'name': 'RenderDebugDirective', 'selector': '[renderDebug]'}];
     var ACTUAL_COMPONENT = {'name': 'Vnas2SettingsComponent'};
 </script>

@@ -66,6 +66,12 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+                <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+    </p>
 
     <p class="comment">
         <h3>Implements</h3>
@@ -73,6 +79,7 @@
     <p class="comment">
                     <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
                     <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
     </p>
 
 
@@ -132,23 +139,28 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#cols">cols</a>
-                            </li>
-                            <li>
-                                <a href="#colsLeft">colsLeft</a>
-                            </li>
-                            <li>
-                                <a href="#colsRight">colsRight</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#injector">injector</a>
                             </li>
                             <li>
                                 <a href="#isMobile$">isMobile$</a>
                             </li>
                             <li>
-                                <a href="#rowHeight">rowHeight</a>
+                                    <span class="modifier">Private</span>
+                                <a href="#subcription">subcription</a>
+                            </li>
+                            <li>
+                                <a href="#pageNumber">pageNumber</a>
+                            </li>
+                            <li>
+                                <a href="#pageSize">pageSize</a>
+                            </li>
+                            <li>
+                                <a href="#titlePage">titlePage</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#subcription">subcription</a>
+                                <a href="#titleService">titleService</a>
                             </li>
                         </ul>
                     </td>
@@ -163,17 +175,32 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnDestroy">ngOnDestroy</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
                             </li>
                             <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#setCols">setCols</a>
+                                <a href="#submitLogin">submitLogin</a>
                             </li>
                             <li>
-                                <a href="#submitLogin">submitLogin</a>
+                                    <span class="modifier">Protected</span>
+                                <a href="#addClassPage">addClassPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#getTitle">getTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#removeClassPage">removeClassPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Protected</span>
+                                <a href="#setTitle">setTitle</a>
                             </li>
                         </ul>
                     </td>
@@ -193,12 +220,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(titleServive: <a href="https://angular.io/api/platform-browser/Title" target="_blank">Title</a>, authenApiService: <a href="../injectables/AuthenticationApiService.html">AuthenticationApiService</a>, authenService: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, snackBarService: <a href="../injectables/SnackBarService.html">SnackBarService</a>, breakpointObserver: BreakpointObserver)</code>
+<code>constructor(injector: <a href="https://angular.io/api/core/Injector" target="_blank">Injector</a>, titleServive: <a href="https://angular.io/api/platform-browser/Title" target="_blank">Title</a>, authenApiService: <a href="../injectables/AuthenticationApiService.html">AuthenticationApiService</a>, authenService: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, snackBarService: <a href="../injectables/SnackBarService.html">SnackBarService</a>, breakpointObserver: BreakpointObserver)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:39</a></div>
                             </td>
                         </tr>
 
@@ -215,6 +242,18 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                                <tr>
+                                                        <td>injector</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                                 <tr>
                                                         <td>titleServive</td>
                                                   
@@ -309,6 +348,45 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnDestroy"></a>
                     <span class="name">
                         <b>
@@ -327,8 +405,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="61"
-                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:61</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:65</a></div>
                 </td>
             </tr>
 
@@ -366,8 +444,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="50"
-                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:50</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:54</a></div>
                 </td>
             </tr>
 
@@ -378,78 +456,6 @@
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="setCols"></a>
-                    <span class="name">
-                        <b>
-                            <span class="modifier">Private</span>
-                            setCols
-                        </b>
-                        <a href="#setCols"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-                    <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>setCols(isMobile: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="67"
-                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:67</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>isMobile</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
                     </div>
                 </td>
             </tr>
@@ -477,8 +483,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="79"
-                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:79</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:76</a></div>
                 </td>
             </tr>
 
@@ -521,6 +527,287 @@
             </tr>
         </tbody>
     </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addClassPage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            addClassPage
+                        </b>
+                        <a href="#addClassPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addClassPage(className: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:22</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>className</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTitle"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            getTitle
+                        </b>
+                        <a href="#getTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTitle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:18</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeClassPage"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            removeClassPage
+                        </b>
+                        <a href="#removeClassPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeClassPage(className?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:28</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>className</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTitle"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Protected</span>
+                            setTitle
+                        </b>
+                        <a href="#setTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setTitle(newTitle?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:14</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newTitle</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
     <section>
     
@@ -531,92 +818,24 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="cols"></a>
+                        <a name="injector"></a>
                         <span class="name">
                             <b>
-                            cols</b>
-                            <a href="#cols"><span class="icon ion-ios-link"></span></a>
+                                <span class="modifier">Public</span>
+                            injector</b>
+                            <a href="#injector"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/Injector" target="_blank" >Injector</a></code>
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>12</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:35</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="colsLeft"></a>
-                        <span class="name">
-                            <b>
-                            colsLeft</b>
-                            <a href="#colsLeft"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>8</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:33</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="colsRight"></a>
-                        <span class="name">
-                            <b>
-                            colsRight</b>
-                            <a href="#colsRight"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>4</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -653,39 +872,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:26</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="rowHeight"></a>
-                        <span class="name">
-                            <b>
-                            rowHeight</b>
-                            <a href="#rowHeight"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>&#x27;768px&#x27;</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:36</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -718,7 +905,154 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">projects/vnas2-auth/src/lib/pages/login/login.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageNumber"></a>
+                        <span class="name">
+                            <b>
+                            pageNumber</b>
+                            <a href="#pageNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;1&#x27;</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:6</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageSize"></a>
+                        <span class="name">
+                            <b>
+                            pageSize</b>
+                            <a href="#pageSize"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;20&#x27;</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:7</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="titlePage"></a>
+                        <span class="name">
+                            <b>
+                            titlePage</b>
+                            <a href="#titlePage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:5</a></code>
+</div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="titleService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            titleService</b>
+                            <a href="#titleService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/platform-browser/Title" target="_blank" >Title</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Inherited from         <code><a href="../classes/BaseComponent.html" target="_self" >BaseComponent</a></code>
+</div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in         <code><a href="../classes/BaseComponent.html#source" target="_self" >BaseComponent:8</a></code>
+</div>
                             </td>
                         </tr>
 
@@ -731,7 +1065,13 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  OnInit,
+  OnDestroy,
+  Injector,
+  AfterViewInit
+} from &#x27;@angular/core&#x27;;
 import { Title } from &#x27;@angular/platform-browser&#x27;;
 import { Subscription, of, Observable } from &#x27;rxjs&#x27;;
 import { map, tap, catchError, switchMap, shareReplay } from &#x27;rxjs/operators&#x27;;
@@ -740,7 +1080,8 @@ import {
   Credentials,
   Logger,
   AuthenticationService,
-  SnackBarService
+  SnackBarService,
+  BaseComponent
 } from &#x27;@vnas2-workspace/vnas2-core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
@@ -753,7 +1094,8 @@ declare var particlesJS: any;
   templateUrl: &#x27;./login.component.html&#x27;,
   styleUrls: [&#x27;./login.component.scss&#x27;]
 })
-export class LoginComponent implements OnInit, OnDestroy {
+export class LoginComponent extends BaseComponent
+  implements OnInit, OnDestroy, AfterViewInit {
   private subcription: Subscription &#x3D; new Subscription();
 
   isMobile$: Observable&lt;boolean&gt; &#x3D; this.breakpointObserver
@@ -763,12 +1105,8 @@ export class LoginComponent implements OnInit, OnDestroy {
       shareReplay()
     );
 
-  colsLeft &#x3D; 8;
-  colsRight &#x3D; 4;
-  cols &#x3D; 12;
-  rowHeight &#x3D; &#x27;768px&#x27;;
-
   constructor(
+    public injector: Injector,
     private titleServive: Title,
     private authenApiService: AuthenticationApiService,
     private authenService: AuthenticationService,
@@ -776,8 +1114,8 @@ export class LoginComponent implements OnInit, OnDestroy {
     private snackBarService: SnackBarService,
     private breakpointObserver: BreakpointObserver
   ) {
+    super(injector);
     this.titleServive.setTitle(&#x27;Đăng nhập ứng dụng&#x27;);
-    this.isMobile$.subscribe(isMobile &#x3D;&gt; this.setCols(isMobile));
   }
 
   ngOnInit() {
@@ -795,18 +1133,11 @@ export class LoginComponent implements OnInit, OnDestroy {
     if (this.subcription) {
       this.subcription.unsubscribe();
     }
+    this.removeClassPage(&#x27;LoginComponent&#x27;);
   }
 
-  private setCols(isMobile: boolean) {
-    if (isMobile) {
-      this.cols &#x3D; this.colsLeft &#x3D; this.colsRight &#x3D; 1;
-      this.rowHeight &#x3D; &#x27;100vh&#x27;;
-    } else {
-      this.colsLeft &#x3D; 8;
-      this.colsRight &#x3D; 4;
-      this.cols &#x3D; 12;
-      this.rowHeight &#x3D; &#x27;768px&#x27;;
-    }
+  ngAfterViewInit() {
+    this.addClassPage(&#x27;LoginComponent&#x27;);
   }
 
   submitLogin(event) {
@@ -840,26 +1171,17 @@ export class LoginComponent implements OnInit, OnDestroy {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot; [ngClass]&#x3D;&quot;{ &#x27;is-desktop&#x27;: !(isMobile$ | async) }&quot;&gt;
-  &lt;div class&#x3D;&quot;container-content&quot;&gt;
-    &lt;mat-grid-list
-      [cols]&#x3D;&quot;cols&quot;
-      [rowHeight]&#x3D;&quot;rowHeight&quot;
-      [ngClass]&#x3D;&quot;{ &#x27;is-desktop&#x27;: !(isMobile$ | async) }&quot;
-    &gt;
-      &lt;mat-grid-tile
-        [colspan]&#x3D;&quot;colsLeft&quot;
-        *ngIf&#x3D;&quot;!(isMobile$ | async)&quot;
-        class&#x3D;&quot;left-container&quot;
-      &gt;
-        &lt;div id&#x3D;&quot;app-left-content&quot;&gt;
-          &lt;h1&gt;Welcome to VNAS2.0&lt;/h1&gt;
-        &lt;/div&gt;
-      &lt;/mat-grid-tile&gt;
-      &lt;mat-grid-tile [colspan]&#x3D;&quot;colsRight&quot; class&#x3D;&quot;right-container&quot;&gt;
-        &lt;app-login-form (submitForm)&#x3D;&quot;submitLogin($event)&quot;&gt;&lt;/app-login-form&gt;
-      &lt;/mat-grid-tile&gt;
-    &lt;/mat-grid-list&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div
+  class&#x3D;&quot;flex-login-container&quot;
+  [ngClass]&#x3D;&quot;{ &#x27;is-mobile&#x27;: isMobile$ | async }&quot;
+&gt;
+  &lt;div class&#x3D;&quot;left-container&quot;&gt;
+    &lt;div id&#x3D;&quot;app-left-content&quot; class&#x3D;&quot;bg-login-1&quot;&gt;
+      &lt;h1&gt;Welcome to VNAS2.0&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;right-container bg-login-2&quot;&gt;
+    &lt;app-login-form (submitForm)&#x3D;&quot;submitLogin($event)&quot;&gt;&lt;/app-login-form&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -869,52 +1191,72 @@ export class LoginComponent implements OnInit, OnDestroy {
                 <p class="comment">
                     <code>./login.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">:host {
-  .container {
-    margin: 0 auto;
-    background: #fff;
-    &amp;.is-desktop {
-      height: 100vh;
-      .container-content {
-        max-width: 80%;
-        margin: 0 auto;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        box-shadow: 1px 1px 5px 0px rgb(130, 130, 130);
+                <pre class="line-numbers"><code class="language-scss">::ng-deep body.LoginComponent {
+  background: rgba(15, 39, 85, 0.85) !important;
+}
+
+:host {
+  .flex-login-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 100px;
+    &amp;.is-mobile {
+      flex-direction: column;
+      margin: 0;
+      .left-container {
+        display: none;
       }
     }
-
-    .mat-grid-list {
-      &amp;.is-desktop {
-        background: #fff;
-      }
+    &gt; div {
+      height: 700px;
+      align-items: center;
+      align-self: center;
     }
   }
 
   .left-container {
+    display: flex;
+    flex: 2 0 0;
     #app-left-content {
-      width: 100%;
-      height: 100%;
-      background-color: #05693f;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-image: url(/assets/images/left-background.jpg);
-      background-repeat: no-repeat;
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       h1 {
-        margin: 0;
-        margin-top: 50%;
         text-align: center;
         color: #fff;
+      }
+      &amp;.bg-login-1 {
+        width: 100%;
+        height: 100%;
+        background-color: #05693f;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url(/assets/images/left-background.jpg);
+        background-repeat: no-repeat;
       }
     }
   }
   .right-container {
-    background: #fafafa;
-    background-repeat: no-repeat;
-    background-image: url(/assets/images/logo_vnas_green.svg);
-    background-position: top 20px center;
+    display: flex;
+    flex: 1 0 0;
+    &amp;.bg-login-2 {
+      background: #fafafa;
+      background-repeat: no-repeat;
+      background-image: url(/assets/images/logo_vnas_green.svg);
+      background-position: top 20px center;
+    }
+  }
+
+  @media screen and (max-height: 768px) {
+    .flex-login-container {
+      &gt; div {
+        height: 500px;
+      }
+      .bg-login-2 {
+        background-position-y: -20px;
+      }
+    }
   }
 }
 </code></pre>
@@ -945,8 +1287,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container" [ngClass]="{ \'is-desktop\': !(isMobile$ | async) }">  <div class="container-content">    <mat-grid-list      [cols]="cols"      [rowHeight]="rowHeight"      [ngClass]="{ \'is-desktop\': !(isMobile$ | async) }"    >      <mat-grid-tile        [colspan]="colsLeft"        *ngIf="!(isMobile$ | async)"        class="left-container"      >        <div id="app-left-content">          <h1>Welcome to VNAS2.0</h1>        </div>      </mat-grid-tile>      <mat-grid-tile [colspan]="colsRight" class="right-container">        <app-login-form (submitForm)="submitLogin($event)"></app-login-form>      </mat-grid-tile>    </mat-grid-list>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
+        var COMPONENT_TEMPLATE = '<div><div  class="flex-login-container"  [ngClass]="{ \'is-mobile\': isMobile$ | async }">  <div class="left-container">    <div id="app-left-content" class="bg-login-1">      <h1>Welcome to VNAS2.0</h1>    </div>  </div>  <div class="right-container bg-login-2">    <app-login-form (submitForm)="submitLogin($event)"></app-login-form>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutObjectComponent', 'selector': 'app-about-object'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppContentLoaderComponent', 'selector': 'app-content-loader'},{'name': 'AppCustomLayoutsComponent', 'selector': 'app-custom-layouts'},{'name': 'AppDialogComponent', 'selector': 'ngn-app-dialog'},{'name': 'AppHeadersComponent', 'selector': 'app-headers'},{'name': 'AppSettingsConfirmComponent', 'selector': 'app-app-settings-confirm'},{'name': 'AppSpinnerLoaderComponent', 'selector': 'app-spinner-loader'},{'name': 'AppTwoColumnsComponent', 'selector': 'app-two-column-layouts'},{'name': 'CategoryOrganizationComponent', 'selector': 'app-category-organization'},{'name': 'CrossAnalysticComponent', 'selector': 'app-cross-analystic'},{'name': 'DailyNewsComponent', 'selector': 'app-daily-news'},{'name': 'DashBoardComponent', 'selector': 'app-dash-board'},{'name': 'FormSearchNewsAdvancedComponent', 'selector': 'app-form-search-news-advanced'},{'name': 'HighLightActionsComponent', 'selector': 'app-high-light-actions'},{'name': 'LayoutsComponent', 'selector': 'app-layouts'},{'name': 'ListObjectsComponent', 'selector': 'app-list-objects'},{'name': 'LoginComponent', 'selector': 'app-page-login'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'LogMonitorComponent', 'selector': 'lib-logger-lib-monitor'},{'name': 'NewsBasketComponent', 'selector': 'app-news-basket'},{'name': 'NewsSummaryComponent', 'selector': 'app-news-summary'},{'name': 'NewsWithDomainComponent', 'selector': 'app-news-with-domain'},{'name': 'PagingCommonComponent', 'selector': 'app-paging-common'},{'name': 'SnackBarComponent', 'selector': 'app-snack-bar'},{'name': 'TreeCategoryVerticalComponent', 'selector': 'app-tree-category-vertical'},{'name': 'Vnas2ObjectPageComponent', 'selector': 'app-vnas2-object-page'},{'name': 'Vnas2SettingsComponent', 'selector': 'app-vnas2-settings'},{'name': 'Vnas2SettingsDomainConfirmDeleteComponent', 'selector': 'app-vnas2-settings-domain-confirm-delete'},{'name': 'Vnas2SettingsDomainFormComponent', 'selector': 'app-settings-domain-form'},{'name': 'Vnas2SettingsFormComponent', 'selector': 'app-vnas2-settings-form'},{'name': 'Vnas2SettingsLayoutComponent', 'selector': 'app-vnas2-settings-layout'},{'name': 'Vnas2SettingsListItemComponent', 'selector': 'app-vnas2-settings-list-item'},{'name': 'Vnas2SettingsListSocialObjectsComponent', 'selector': 'app-vnas2-settings-list-social-objects'},{'name': 'Vnas2SettingsMenuComponent', 'selector': 'app-vnas2-settings-menu'},{'name': 'Vnas2SettingsNewsBasketComponent', 'selector': 'app-vnas2-settings-news-basket'},{'name': 'Vnas2SettingsNewsDomainComponent', 'selector': 'app-vnas2-settings-news-domain'},{'name': 'Vnas2SettingsSocialObjectComponent', 'selector': 'app-vnas2-settings-social-object'},{'name': 'Vnas2SettingsSocialObjectFormComponent', 'selector': 'app-vnas2-settings-social-object-form'},{'name': 'Vnas2SettingsTableTreeableComponent', 'selector': 'app-vnas2-settings-table-treeable'},{'name': 'Vnas2UiChartComponent', 'selector': 'lib-vnas2-ui-chart'}];
     var DIRECTIVES = [{'name': 'DefaultImageDirective', 'selector': 'img[default]'},{'name': 'RenderDebugDirective', 'selector': '[renderDebug]'}];
     var ACTUAL_COMPONENT = {'name': 'LoginComponent'};
 </script>

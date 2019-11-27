@@ -357,6 +357,50 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 </li>
                             </li>
                             <li class="link">
+                                <a href="modules/Vnas2ObjectsPageModule.html" data-type="entity-link">Vnas2ObjectsPageModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' : 'data-target="#xs-components-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' :
+                                            'id="xs-components-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' }>
+                                            <li class="link">
+                                                <a href="components/AboutObjectComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">AboutObjectComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/CrossAnalysticComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">CrossAnalysticComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/Vnas2ObjectPageComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">Vnas2ObjectPageComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                <li class="chapter inner">
+                                    <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                        'data-target="#injectables-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' : 'data-target="#xs-injectables-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' }>
+                                        <span class="icon ion-md-arrow-round-down"></span>
+                                        <span>Injectables</span>
+                                        <span class="icon ion-ios-arrow-down"></span>
+                                    </div>
+                                    <ul class="links collapse" ${ isNormalMode ? 'id="injectables-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' :
+                                        'id="xs-injectables-links-module-Vnas2ObjectsPageModule-8eab789f471518175dabced13197423e"' }>
+                                        <li class="link">
+                                            <a href="injectables/Vnas2ObjectsPageSandboxService.html"
+                                                data-type="entity-link" data-context="sub-entity" data-context-id="modules" }>Vnas2ObjectsPageSandboxService</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/Vnas2ObjectsPageRoutingModule.html" data-type="entity-link">Vnas2ObjectsPageRoutingModule</a>
+                            </li>
+                            <li class="link">
                                 <a href="modules/Vnas2SettingsModule.html" data-type="entity-link">Vnas2SettingsModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
@@ -464,57 +508,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/Vnas2UiCommonsModule.html" data-type="entity-link">Vnas2UiCommonsModule</a>
-                                    <li class="chapter inner">
-                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' : 'data-target="#xs-components-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' }>
-                                            <span class="icon ion-md-cog"></span>
-                                            <span>Components</span>
-                                            <span class="icon ion-ios-arrow-down"></span>
-                                        </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' :
-                                            'id="xs-components-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' }>
-                                            <li class="link">
-                                                <a href="components/CategoryOrganizationComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">CategoryOrganizationComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/DailyNewsComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">DailyNewsComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/FormSearchNewsAdvancedComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">FormSearchNewsAdvancedComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/HighLightActionsComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">HighLightActionsComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/ListObjectsComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">ListObjectsComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/NewsBasketComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">NewsBasketComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/NewsSummaryComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">NewsSummaryComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/NewsWithDomainComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">NewsWithDomainComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/PagingCommonComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">PagingCommonComponent</a>
-                                            </li>
-                                            <li class="link">
-                                                <a href="components/TreeCategoryVerticalComponent.html"
-                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">TreeCategoryVerticalComponent</a>
-                                            </li>
-                                        </ul>
-                                    </li>
                                 <li class="chapter inner">
                                     <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
                                         'data-target="#directives-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' : 'data-target="#xs-directives-links-module-Vnas2UiCommonsModule-982d25feaab53d9201c03440fadb1921"' }>
@@ -557,6 +550,46 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                 </ul>
                 </li>
                     <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#components-links"' :
+                            'data-target="#xs-components-links"' }>
+                            <span class="icon ion-md-cog"></span>
+                            <span>Components</span>
+                            <span class="icon ion-ios-arrow-down"></span>
+                        </div>
+                        <ul class="links collapse " ${ isNormalMode ? 'id="components-links"' : 'id="xs-components-links"' }>
+                            <li class="link">
+                                <a href="components/CategoryOrganizationComponent.html" data-type="entity-link">CategoryOrganizationComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/DailyNewsComponent.html" data-type="entity-link">DailyNewsComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/FormSearchNewsAdvancedComponent.html" data-type="entity-link">FormSearchNewsAdvancedComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/HighLightActionsComponent.html" data-type="entity-link">HighLightActionsComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/ListObjectsComponent.html" data-type="entity-link">ListObjectsComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/NewsBasketComponent.html" data-type="entity-link">NewsBasketComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/NewsSummaryComponent.html" data-type="entity-link">NewsSummaryComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/NewsWithDomainComponent.html" data-type="entity-link">NewsWithDomainComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/PagingCommonComponent.html" data-type="entity-link">PagingCommonComponent</a>
+                            </li>
+                            <li class="link">
+                                <a href="components/TreeCategoryVerticalComponent.html" data-type="entity-link">TreeCategoryVerticalComponent</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#classes-links"' :
                             'data-target="#xs-classes-links"' }>
                             <span class="icon ion-ios-paper"></span>
@@ -587,6 +620,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="classes/NewsSearch.html" data-type="entity-link">NewsSearch</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/PasswordValidator.html" data-type="entity-link">PasswordValidator</a>
                             </li>
                             <li class="link">
                                 <a href="classes/UserContext.html" data-type="entity-link">UserContext</a>
@@ -645,6 +681,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 </li>
                                 <li class="link">
                                     <a href="injectables/SocialObjectService.html" data-type="entity-link">SocialObjectService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="injectables/Vnas2ObjectsPageSandboxService.html" data-type="entity-link">Vnas2ObjectsPageSandboxService</a>
                                 </li>
                                 <li class="link">
                                     <a href="injectables/Vnas2SettingsSandboxService.html" data-type="entity-link">Vnas2SettingsSandboxService</a>
@@ -771,6 +810,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="interfaces/TreeFlatNode.html" data-type="entity-link">TreeFlatNode</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/ValidationResult.html" data-type="entity-link">ValidationResult</a>
                             </li>
                             <li class="link">
                                 <a href="interfaces/WebsiteModel.html" data-type="entity-link">WebsiteModel</a>
